@@ -81,36 +81,22 @@ button { font: inherit; }
 .service-mini h3 { margin: 0; color: white; font-size: .92rem; }
 .service-mini p { margin: 12px 0 17px; color: var(--muted); font-size: .76rem; }
 .service-mini a { color: var(--green-bright); font-size: .73rem; font-weight: 800; }
-.service-band-image { background: linear-gradient(rgba(7,16,22,.08), rgba(7,16,22,.45)), url("assets/old-site-media/IMG_6449-scaled.jpg") center 48% / cover no-repeat; }
+.service-band-image { background: linear-gradient(rgba(7,16,22,.08), rgba(7,16,22,.45)), url("assets/old-site-media/Holmac-zomer-2025.jpg") center 48% / cover no-repeat; }
 
 .brand-band { padding: 52px 0 57px; border-bottom: 1px solid var(--line); background: #081118; }
 .brand-band-inner { display: grid; grid-template-columns: 260px 1fr; gap: 42px; align-items: end; }
 .brand-band-heading h2 { margin: 0; color: white; font-size: 2rem; line-height: 1.05; letter-spacing: -.04em; }
 .band-link { display: inline-block; margin-top: 17px; color: var(--green-bright); font-size: .7rem; font-weight: 800; }
-.brand-role-grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); }
-.brand-role { min-height: 145px; display: flex; flex-direction: column; justify-content: center; padding: 25px; border-right: 1px solid var(--line); background: rgba(255,255,255,.015); transition: background .25s ease, transform .25s ease; }
-.brand-role:last-child { border-right: 0; }
+.brand-role-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; padding: 1px; background: var(--line); }
+.brand-role { min-height: 132px; display: flex; flex-direction: column; justify-content: center; padding: 25px; background: #09141b; transition: background .25s ease, transform .25s ease; }
 .brand-role:hover { z-index: 2; background: rgba(255,255,255,.05); transform: translateY(-3px); }
 .brand-role-featured { box-shadow: inset 0 3px 0 var(--green-bright); background: linear-gradient(145deg, rgba(120,196,66,.19), rgba(120,196,66,.05)); }
-.brand-role-valtra { background: linear-gradient(145deg, rgba(143,158,166,.2), rgba(120,196,66,.06)); }
+.brand-role-holmac { grid-column: span 2; }
 .brand-role span { color: var(--green-bright); font-size: .61rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
 .brand-role strong { margin-top: 13px; color: white; font-size: 1.45rem; line-height: 1.1; letter-spacing: .02em; }
 .brand-role small { margin-top: 8px; color: var(--muted); font-size: .68rem; }
-.brand-role-more strong { font-size: .95rem; line-height: 1.35; }
-
-.feature-grid { display: grid; grid-template-columns: 1fr 1fr; background: #050d12; }
-.feature-panel { position: relative; min-height: 540px; display: flex; align-items: flex-end; overflow: hidden; }
-.feature-panel-image, .feature-panel-shade { position: absolute; inset: 0; }
-.feature-panel-image { background-position: center; background-size: cover; transition: transform .8s ease; }
-.feature-panel:hover .feature-panel-image { transform: scale(1.035); }
-.feature-image-keuringen { background-image: url("assets/old-site-media/Kubota-spuit.jpg"); background-position: center 56%; }
-.feature-image-workshop { background-image: url("assets/old-site-media/Holmac-HZC-32-40.jpg"); }
-.feature-panel-shade { background: linear-gradient(0deg, rgba(3,11,15,.98) 0%, rgba(4,13,18,.78) 49%, rgba(4,13,18,.2) 100%); }
-.feature-panel-content { position: relative; z-index: 2; max-width: 630px; padding: 70px clamp(38px, 6vw, 90px); }
-.feature-panel-content h2 { max-width: 510px; margin: 0; color: white; font-size: clamp(2.2rem, 4vw, 3.5rem); line-height: .98; letter-spacing: -.055em; }
-.feature-panel-content > p:not(.section-label) { max-width: 520px; margin: 20px 0; color: rgba(255,255,255,.75); }
-.feature-panel-content ul { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 0 0 26px; padding: 0; color: white; font-size: .75rem; list-style: none; }
-.feature-panel-content li::before { content: "✓"; margin-right: 7px; color: var(--green-bright); }
+.brand-role-plain { align-items: center; text-align: center; }
+.brand-role-plain strong { margin-top: 0; font-size: clamp(.95rem, 1.35vw, 1.32rem); }
 
 .about-v2 { padding: 105px 0; background: #f2f0e9; color: #122019; }
 .about-v2-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(420px, 1fr); gap: 105px; align-items: center; }
@@ -120,6 +106,10 @@ button { font: inherit; }
 .about-checks { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
 .about-checks span { padding: 9px 13px; border: 1px solid rgba(18,32,25,.14); font-size: .72rem; font-weight: 800; }
 .about-checks span::before { content: "✓"; margin-right: 7px; color: #6aac37; }
+.membership-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 24px; }
+.membership-strip span { color: #657169; font-size: .64rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+.membership-strip strong { padding: 9px 12px; color: #183024; border: 1px solid rgba(18,32,25,.18); font-size: .68rem; letter-spacing: .06em; }
+.membership-strip-light { margin-top: 28px; }
 .about-more { display: inline-block; margin-top: 28px; color: #497e29; border-bottom: 1px solid currentColor; font-size: .78rem; font-weight: 850; }
 .about-v2-visual { position: relative; min-height: 560px; }
 .about-v2-visual img { width: 100%; height: 560px; object-fit: cover; object-position: center 42%; filter: saturate(.85) contrast(1.03); }
@@ -157,7 +147,7 @@ button { font: inherit; }
 .main-nav a[aria-current="page"] { color: white; }
 .main-nav a[aria-current="page"]::after { right: 0; }
 .subpage-hero { position: relative; min-height: 560px; display: flex; align-items: flex-end; overflow: hidden; background-color: var(--night); background-position: center; background-size: cover; }
-.subpage-hero-services { background-image: url("assets/old-site-media/IMG_6449-scaled.jpg"); background-position: center 47%; }
+.subpage-hero-services { background-image: url("assets/old-site-media/IMG_7558-scaled.jpg"); background-position: center 52%; }
 .subpage-hero-brands { background-image: url("assets/old-site-media/valtra-n-series-hero.jpg"); background-position: center 52%; }
 .subpage-hero-about { background-image: url("assets/old-site-media/Holmac-zomer-2025.jpg"); background-position: center 42%; }
 .subpage-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4,12,18,.96) 0%, rgba(4,12,18,.75) 48%, rgba(4,12,18,.28) 100%), linear-gradient(0deg, rgba(4,12,18,.75), transparent 52%); }
@@ -241,7 +231,6 @@ button { font: inherit; }
 .partner-detail-valtra ul { grid-template-columns: 1fr 1fr; gap: 8px 24px; margin: 24px 0 26px; }
 .partner-detail-valtra li { border-color: rgba(255,255,255,.18); color: white; }
 .partner-detail-valtra a { color: var(--green-bright); font-size: .78rem; font-weight: 850; }
-.partner-detail-airpress { background: #f9faf5; }
 
 .experience-section { padding: 100px 0; background: var(--night-2); }
 .experience-grid { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 80px; align-items: center; }
@@ -327,10 +316,6 @@ button { font: inherit; }
   .service-band-title { grid-column: 1 / -1; padding-left: 0; border-bottom: 1px solid var(--line); }
   .service-mini { min-height: 250px; }
   .brand-role-grid { grid-template-columns: 1fr 1fr; }
-  .brand-role:nth-child(2) { border-right: 0; }
-  .brand-role:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-  .feature-grid { grid-template-columns: 1fr; }
-  .feature-panel { min-height: 520px; }
   .about-v2-grid { grid-template-columns: 1fr; gap: 55px; }
   .about-v2-visual { min-height: 460px; }
   .about-v2-visual img { height: 460px; }
@@ -382,14 +367,12 @@ button { font: inherit; }
   .button { width: 100%; }
   .hero-bottom-inner span { padding: 0 8px; font-size: .58rem; }
   .hero-bottom-inner b { margin-right: 5px; }
-  .service-band-grid, .brand-role-grid { grid-template-columns: 1fr; }
+  .service-band-grid { grid-template-columns: 1fr; }
+  .brand-role-grid { grid-template-columns: 1fr 1fr; }
   .service-band-title { padding: 38px 0; }
   .service-mini { min-height: 0; padding: 32px 14px 34px 0; border-right: 0; border-bottom: 1px solid var(--line); }
-  .brand-role { min-height: 125px; border-right: 0; border-bottom: 1px solid var(--line); }
-  .brand-role:last-child { border-bottom: 0; }
-  .feature-panel { min-height: 560px; }
-  .feature-panel-content { padding: 50px 22px; }
-  .feature-panel-content h2 { font-size: 2.45rem; }
+  .brand-role { min-height: 112px; }
+  .brand-role-holmac { grid-column: span 2; }
   .about-v2 { padding: 75px 0; }
   .about-v2 h2 { font-size: 3.1rem; }
   .about-v2-visual { min-height: 390px; }
