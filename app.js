@@ -49,6 +49,18 @@ document.querySelectorAll('.reveal').forEach((element) => {
   else element.classList.add('is-visible');
 });
 
+function revealLinkedSection() {
+  const id = decodeURIComponent(window.location.hash.slice(1));
+  if (!id) return;
+  const target = document.getElementById(id);
+  if (!target) return;
+  if (target.classList.contains('reveal')) target.classList.add('is-visible');
+  target.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
+}
+
+revealLinkedSection();
+window.addEventListener('hashchange', revealLinkedSection);
+
 document.querySelectorAll('[data-faq]').forEach((item) => {
   const button = item.querySelector('.faq-question');
   if (!button) return;
