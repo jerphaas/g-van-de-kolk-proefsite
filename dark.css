@@ -42,7 +42,7 @@ button { font: inherit; }
 .menu-button > span:not(.sr-only) { display: block; width: 22px; height: 2px; margin: 5px auto; background: white; transition: transform .2s ease, opacity .2s ease; }
 
 .hero-v2 { position: relative; min-height: 680px; display: flex; align-items: center; overflow: hidden; background: #0b151b; }
-.hero-v2-image { position: absolute; inset: 0; background: url("assets/old-site-media/valtra-n-series-hero.jpg") 50% 52% / cover no-repeat; animation: heroDrift 16s ease-in-out infinite alternate; }
+.hero-v2-image { position: absolute; inset: 0; background: url("assets/site-images/valtra-s-series-hero.jpg") 50% 52% / cover no-repeat; animation: heroDrift 16s ease-in-out infinite alternate; }
 .hero-v2-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4,12,18,.98) 0%, rgba(4,12,18,.91) 31%, rgba(4,12,18,.42) 62%, rgba(4,12,18,.16) 100%), linear-gradient(0deg, rgba(3,10,14,.78), transparent 52%); }
 .hero-v2-inner { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 620px) 1fr; gap: 80px; align-items: end; padding: 125px 0 105px; }
 .hero-v2-copy { max-width: 610px; }
@@ -81,7 +81,7 @@ button { font: inherit; }
 .service-mini h3 { margin: 0; color: white; font-size: .92rem; }
 .service-mini p { margin: 12px 0 17px; color: var(--muted); font-size: .76rem; }
 .service-mini a { color: var(--green-bright); font-size: .73rem; font-weight: 800; }
-.service-band-image { background: linear-gradient(rgba(7,16,22,.08), rgba(7,16,22,.45)), url("assets/old-site-media/Holmac-zomer-2025.jpg") center 48% / cover no-repeat; }
+.service-band-image { background: linear-gradient(rgba(7,16,22,.08), rgba(7,16,22,.45)), url("assets/site-images/holmac-machines-zomer-2025.jpg") center 48% / cover no-repeat; }
 
 .brand-band { padding: 52px 0 57px; border-bottom: 1px solid var(--line); background: #081118; }
 .brand-band-inner { display: grid; grid-template-columns: 260px 1fr; gap: 42px; align-items: end; }
@@ -104,8 +104,8 @@ button { font: inherit; }
 .brand-depth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); }
 .brand-depth-card { position: relative; min-height: 710px; display: flex; align-items: flex-end; overflow: hidden; background-position: center; background-size: cover; }
 .brand-depth-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(3,11,15,.98) 0%, rgba(3,11,15,.91) 45%, rgba(3,11,15,.22) 82%), linear-gradient(90deg, rgba(3,11,15,.48), transparent 70%); }
-.brand-depth-holmac { background-image: url("assets/old-site-media/Holmac-HZC-32-40.jpg"); background-position: center 48%; }
-.brand-depth-valtra { background-image: url("assets/old-site-media/valtra-n-series-hero.jpg"); background-position: 64% center; }
+.brand-depth-holmac { background-image: url("assets/site-images/holmac-hzc-45.jpg"); background-position: center 48%; }
+.brand-depth-valtra { background-image: url("assets/site-images/valtra-s-series-hero.jpg"); background-position: 64% center; }
 .brand-depth-content { position: relative; z-index: 2; width: 100%; padding: 285px 48px 44px; }
 .brand-depth-content > span { display: inline-block; padding: 7px 10px; color: #102018; background: var(--green-bright); font-size: .65rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
 .brand-depth-content h2 { margin: 23px 0 12px; color: white; font-size: clamp(3.7rem, 6vw, 5.6rem); line-height: .9; letter-spacing: -.055em; }
@@ -153,6 +153,10 @@ button { font: inherit; }
 .contact-v2-details strong { color: white; font-size: .78rem; line-height: 1.65; }
 .contact-v2-actions { display: flex; flex-direction: column; gap: 10px; }
 
+.whatsapp-float { position: fixed; right: 24px; bottom: 24px; z-index: 110; min-height: 52px; display: inline-flex; align-items: center; gap: 10px; padding: 0 18px; color: #fff; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; background: #168a43; box-shadow: 0 14px 36px rgba(0,0,0,.32); font-size: .76rem; font-weight: 850; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+.whatsapp-float:hover, .whatsapp-float:focus-visible { color: #fff; background: #20a954; transform: translateY(-3px); box-shadow: 0 18px 40px rgba(0,0,0,.38); }
+.whatsapp-float svg { width: 22px; height: 22px; flex: 0 0 auto; fill: currentColor; }
+
 .site-footer { color: var(--muted); background: #040b10; }
 .footer-main { min-height: 175px; display: grid; grid-template-columns: 260px 1fr auto; gap: 60px; align-items: center; }
 .footer-brand img { width: 235px; }
@@ -171,9 +175,9 @@ button { font: inherit; }
 .main-nav a[aria-current="page"] { color: white; }
 .main-nav a[aria-current="page"]::after { right: 0; }
 .subpage-hero { position: relative; min-height: 560px; display: flex; align-items: flex-end; overflow: hidden; background-color: var(--night); background-position: center; background-size: cover; }
-.subpage-hero-services { background-image: url("assets/old-site-media/IMG_7558-scaled.jpg"); background-position: center 52%; }
-.subpage-hero-brands { background-image: url("assets/old-site-media/valtra-n-series-hero.jpg"); background-position: center 52%; }
-.subpage-hero-about { background-image: url("assets/old-site-media/Holmac-zomer-2025.jpg"); background-position: center 42%; }
+.subpage-hero-services { background-image: url("assets/site-images/fendt-landbouw.jpg"); background-position: center 52%; }
+.subpage-hero-brands { background-image: url("assets/site-images/valtra-s-series-hero.jpg"); background-position: center 52%; }
+.subpage-hero-about { background-image: url("assets/site-images/holmac-machines-zomer-2025.jpg"); background-position: center 42%; }
 .subpage-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4,12,18,.96) 0%, rgba(4,12,18,.75) 48%, rgba(4,12,18,.28) 100%), linear-gradient(0deg, rgba(4,12,18,.75), transparent 52%); }
 .subpage-hero-inner { position: relative; z-index: 2; padding: 175px 0 85px; }
 .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 36px; color: rgba(255,255,255,.58); font-size: .72rem; }
@@ -205,16 +209,16 @@ button { font: inherit; }
 .detail-service-card li::before, .partner-detail-card li::before { content: "✓"; margin-right: 10px; color: #68aa36; }
 .detail-service-card > a, .partner-detail-card > a { color: #518b2d; font-size: .78rem; font-weight: 850; }
 .detail-service-card-image { background-position: center; background-size: cover; }
-.detail-image-maintenance { background-image: linear-gradient(rgba(6,17,23,.12), rgba(6,17,23,.38)), url("assets/old-site-media/IMG_7558-scaled.jpg"); }
+.detail-image-maintenance { background-image: linear-gradient(rgba(6,17,23,.12), rgba(6,17,23,.38)), url("assets/site-images/fendt-landbouw.jpg"); }
 
 .sector-detail-section { padding: 100px 0; background: var(--night-2); }
 .sector-detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
 .sector-detail { position: relative; min-height: 430px; display: flex; align-items: flex-end; overflow: hidden; padding: 36px; border-right: 1px solid var(--line); background-position: center; background-size: cover; }
 .sector-detail:last-child { border-right: 0; }
 .sector-detail::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(3,11,15,.96), rgba(4,13,18,.12)); }
-.sector-detail-boom { background-image: url("assets/old-site-media/Holmac-HZC-32-40.jpg"); }
-.sector-detail-land { background-image: url("assets/old-site-media/IMG_7558-scaled.jpg"); }
-.sector-detail-park { background-image: url("assets/old-site-media/Kubota-B2311-1.jpg"); }
+.sector-detail-boom { background-image: url("assets/site-images/holmac-miniloader.webp"); }
+.sector-detail-land { background-image: url("assets/site-images/fendt-landbouw.jpg"); }
+.sector-detail-park { background-image: url("assets/site-images/gyrokart.webp"); background-position: center 55%; }
 .sector-detail > span { position: absolute; z-index: 2; top: 26px; right: 28px; color: var(--green-bright); font-size: .72rem; font-weight: 900; }
 .sector-detail > div { position: relative; z-index: 2; }
 .sector-detail h3 { margin: 0; color: white; font-size: 1.55rem; }
@@ -284,7 +288,7 @@ button { font: inherit; }
 .partner-detail-card > span { display: inline-block; padding: 7px 10px; color: #102018; background: var(--green-bright); font-size: .65rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
 .partner-detail-card h2 { margin: 35px 0 0; font-size: 3rem; letter-spacing: -.04em; }
 .partner-detail-card > p { color: #5c6962; }
-.partner-detail-valtra { position: relative; display: flex; align-items: flex-end; overflow: hidden; padding: 0; color: white; background: #08131b url("assets/old-site-media/valtra-n-series-hero.jpg") 64% center / cover no-repeat; }
+.partner-detail-valtra { position: relative; display: flex; align-items: flex-end; overflow: hidden; padding: 0; color: white; background: #08131b url("assets/site-images/valtra-s-series-hero.jpg") 64% center / cover no-repeat; }
 .partner-detail-valtra::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(3,11,15,.98) 0%, rgba(3,11,15,.9) 43%, rgba(3,11,15,.16) 82%), linear-gradient(90deg, rgba(3,11,15,.55), transparent 70%); }
 .partner-detail-valtra-content { position: relative; z-index: 2; width: 100%; padding: 280px 55px 48px; }
 .partner-detail-valtra-content > span { display: inline-block; padding: 7px 10px; color: #102018; background: var(--green-bright); font-size: .65rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
@@ -497,6 +501,8 @@ button { font: inherit; }
   .region-facts { grid-template-columns: 1fr; }
   .region-facts span { border-right: 0; border-bottom: 1px solid rgba(18,32,25,.14); }
   .region-facts span:last-child { border-bottom: 0; }
+  .whatsapp-float { right: 14px; bottom: 14px; width: 52px; min-height: 52px; justify-content: center; padding: 0; }
+  .whatsapp-float span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 }
 
 @media (prefers-reduced-motion: reduce) {
